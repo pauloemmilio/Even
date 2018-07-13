@@ -1,0 +1,39 @@
+.navbar-brand{
+	padding-top:6px;
+}
+
+.panel-default{
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.alert {
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.aw-link-panel {
+	float: right;
+	padding: 0px;
+}
+
+.aw-titulo-panel {
+	float: left;
+	padding-top: 2px;
+}
+
+img[size="A4"] {
+  background: white;
+  width: 29.7cm;
+  height: 21cm;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+@media print {
+  body, page[size="A4"] {
+    margin: 0;
+    box-shadow: 0;
+  }
+}

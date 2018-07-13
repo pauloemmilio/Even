@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/a999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="LayoutPadrao">
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<head>
+<meta charset="UTF-8" />
+<title>Gerador de certificados</title>
+</head>
+<body>
+	
+	<div class="container">
+	<form class="form-horizontal" method="post" enctype="multipart/form-data" action="/certificado/gerar">
+		<div class="form-group">
+			<label for="exampleFormControlFile1">1 - Criar modelo</label>
+			<input type='file' name="arquivo" class="form-control-file" onchange="readURL(this);" />
+    		
+		</div>
+		<img size="A4" id="backgroud" src="/img/default.png"  alt="Selecione uma imagem" />
+		<div class="form-group">
+		    <label for="exampleFormControlTextarea1">Example textarea</label>
+		    <textarea name="participantes" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+		  </div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
+	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/utils.js"></script>
+</body>
